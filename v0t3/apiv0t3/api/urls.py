@@ -4,7 +4,6 @@ from apiv0t3.api.views import ( ElectorDetailCreateAPIView,
 								VoteDetailCreateAPIView,
 								VoteListCreateAPIView )
 
-
 urlpatterns = [
 	path("electors/", 
 		ElectorListCreateAPIView.as_view(), 
@@ -18,5 +17,4 @@ urlpatterns = [
 	path("votes/<int:pk>/", 
 		VoteDetailCreateAPIView.as_view(), 
 		name="vote-detail")
-
 ]
