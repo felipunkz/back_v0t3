@@ -8,7 +8,7 @@
 			"name": "Python: Django",
 			"type": "python",
 			"request": "launch",
-			"program": "/home/fnieves/Learning/Bedu-Tech Bootcamp/Proyecto final Bedu/v0t3/backend/v0t3/manage.py",
+			"program": "/home/fnieves/Learning/Bedu-Tech-Bootcamp/Proyecto-Final-Bedu/v0t3/backend/v0t3/manage.py",
 			"args": [
 				"runserver",
 				"--noreload",

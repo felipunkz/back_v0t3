@@ -48,10 +48,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # Simplified static file serving.
-    # https://warehouse.python.org/project/whitenoise/
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
 ROOT_URLCONF = 'v0t3.urls'
@@ -124,11 +121,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# # Simplified static file serving.
-# # https://warehouse.python.org/project/whitenoise/
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# # Configure Django App for Heroku.
-# import django_heroku
-# django_heroku.settings(locals())
